@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Aldivaro';
+    src: url('fonts/Aldivaro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Aldivaro Rough';
+    src: url('fonts/Aldivaro-Rough.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Aldivaro Rounded';
+    src: url('fonts/Aldivaro-Rounded.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Aldivaro Stamp';
+    src: url('fonts/Aldivaro-Stamp.otf') format('opentype');
+}
+
+.aldivaro {
+    font-family: 'Aldivaro', sans-serif;
+}
+
+.aldivaro-rough {
+    font-family: 'Aldivaro Rough', sans-serif;
+}
+
+.aldivaro-rounded {
+    font-family: 'Aldivaro Rounded', sans-serif;
+}
+
+.aldivaro-stamp {
+    font-family: 'Aldivaro Stamp', sans-serif;
+}

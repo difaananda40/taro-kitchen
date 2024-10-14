@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Kitchen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ['Raleway', 'Arial', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        'brand-yellow': '#FDAA13',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="absolute w-full py-[29px] z-50">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="logo" class="w-[105px] h-[63px] mx-auto">
+        </a>
+    </header>
+    <section style="background: url('assets/bg-yellow.svg')" class="pb-14 relative grid grid-cols-1 md:grid-cols-2 items-center">
+        <div class="relative z-0">
+            <img src="assets/burrito-banner.png" alt="banner" class="w-full mx-auto">
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center -mt-16">
+                <h1 class="aldivaro-stamp text-[42px] text-white">50% OFF</h1>
+                <h2 class="aldivaro-rough text-2xl">Your first bowl</h2>
+            </div>
+        </div>
+        <div class="flex flex-col gap-3 px-4 md:px-14 relative z-10 items-center">
+            <h3 class="aldivaro-rough text-2xl text-center text-white -mt-24 md:mt-0 leading-relaxed">
+                Crush your goals<br class="md:hidden">
+                with<br class="hidden md:block"> our<br class="hidden">
+                burrito bowls!
+            </h3>
+            <p class="text-center text-sm">
+                <strong>Taco Kitchen is now offering four fresh bowls to fit your healthy lifestyle!</strong>
+                You bring the appetite, and we'll take care of the macros. Just drop your email below to get the redemption code.
+            </p>
+            <img src="assets/arrow-down.svg" alt="arrow" class="w-[28px] h-[28px]">
+            <form action="youre-in.html" class="flex flex-col gap-3 w-full items-center">
+                <input type="email" placeholder="Enter your email here" class="w-full md:max-w-[462px] p-3 rounded-[6px] font-semibold text-center">
+                <button class="w-full md:max-w-[462px] p-3 rounded-md font-semibold text-center bg-black text-white">Get The Code</button>
+            </form>
+        </div>
+    </section>
+    <section style="background: url('assets/bg-black.svg')" class="py-14 md:py-32 px-4 relative">
+        <img src="assets/divider.svg" alt="divider" class="absolute h-[116px] -top-[calc(116px/2)] left-0 w-full object-cover">
+        <h1 class="aldivaro-rough text-2xl text-center text-white md:[&_br]:hidden">
+            What's In<br>
+            The Bowls
+        </h1>
+        <ul class="mx-auto mt-[30px] md:mt-[106px] grid grid-cols-1 md:grid-cols-2 md:max-w-screen-lg gap-[22px] md:gap-x-[164px] md:gap-y-[67px]">
+            <li class="flex flex-col items-center gap-[10px]">
+                <img src="assets/keto-bowl.png" alt="keto bowl" class="w-[224px]">
+                <h2 class="text-xl aldivaro-stamp text-brand-yellow">
+                    Keto Bowl
+                </h2>
+                <p class="font-[14px] text-white text-center">Baby Romaine Lettuce, Beef, chicken or shrimp, Guacamole, Salsa, Pico, Cheese, Sour Cream.</p>
+                <table class="text-white w-full border-separate border-spacing-y-2 text-sm">
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Beef</td>
+                        <td class="text-left font-semibold">37g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">33g Fat</td>
+                        <td class="text-right font-semibold">13g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Chicken</td>
+                        <td class="text-left font-semibold">41g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">23g Fat</td>
+                        <td class="text-right font-semibold">13g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Shrimp</td>
+                        <td class="text-left font-semibold">35g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">16g Fat</td>
+                        <td class="text-right font-semibold">14g Carbs</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="flex flex-col items-center gap-[10px]">
+                <img src="assets/protein-bowl.png" alt="protein bowl" class="w-[224px]">
+                <h2 class="text-xl aldivaro-stamp text-brand-yellow">
+                    High Protein Bowl
+                </h2>
+                <p class="font-[14px] text-white text-center">White rice, double beef, chicken or shrimp, beans, red salsa, cheese, romaine lettuce.</p>
+                <table class="text-white w-full border-separate border-spacing-y-2 text-sm">
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Beef</td>
+                        <td class="text-left font-semibold">65g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">44g Fat</td>
+                        <td class="text-right font-semibold">59g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Chicken</td>
+                        <td class="text-left font-semibold">77g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">15g Fat</td>
+                        <td class="text-right font-semibold">59g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Shrimp</td>
+                        <td class="text-left font-semibold">62g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">11g Fat</td>
+                        <td class="text-right font-semibold">60g Carbs</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="flex flex-col items-center gap-[10px]">
+                <img src="assets/veggie-bowl.png" alt="veggie bowl" class="w-[224px]">
+                <h2 class="text-xl aldivaro-stamp text-brand-yellow">
+                    Veggie Bowl
+                </h2>
+                <p class="font-[14px] text-white text-center">White rice, romain, beans, fajita veggies, salsa, corn, guacamole.</p>
+                <table class="text-white w-full border-separate border-spacing-y-2 text-sm">
+                    <tr>
+                        <td class="text-left font-semibold">13g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">8g Fat</td>
+                        <td class="text-right font-semibold">76g Carbs</td>
+                    </tr>
+                </table>
+            </li>
+            <li class="flex flex-col items-center gap-[10px]">
+                <img src="assets/macro-bowl.png" alt="macro bowl" class="w-[224px]">
+                <h2 class="text-xl aldivaro-stamp text-brand-yellow">
+                    Macro Bowl
+                </h2>
+                <p class="font-[14px] text-white text-center">Beef, chicken or shrimp, light rice, extra romaine lettuce, beans, fajita veggies, salsa, guacamole.</p>
+                <table class="text-white w-full border-separate border-spacing-y-2 text-sm">
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Beef</td>
+                        <td class="text-left font-semibold">32g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">25g Fat</td>
+                        <td class="text-right font-semibold">46g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Chicken</td>
+                        <td class="text-left font-semibold">41g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">11g Fat</td>
+                        <td class="text-right font-semibold">46g Carbs</td>
+                    </tr>
+                    <tr>
+                        <td class="w-1/4 font-bold uppercase">Shrimp</td>
+                        <td class="text-left font-semibold">34g Protein</td>
+                        <td class="text-center font-semibold border-l-2 border-r-2">9g Fat</td>
+                        <td class="text-right font-semibold">46g Carbs</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </section>
+    <footer style="background: url('assets/bg-yellow.svg')" class="pt-16 pb-6 md:py-20 px-4 lg:px-12 relative">
+        <img src="assets/divider.svg" alt="divider" class="absolute h-[116px] -top-[calc(116px/2)] left-0 w-full object-cover">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-11 lg:gap-20">
+            <img src="assets/logo-secondary.png" alt="logo" class="w-[178px] hidden lg:block self-end">
+            <div class="flex flex-col items-center lg:items-start gap-5">
+                <h1 class="aldivaro-stamp text-[16px] text-center text-white">
+                    Our Locations
+                </h1>
+                <ul class="flex flex-col gap-[30px]">
+                    <li class="flex flex-col items-center md:items-start">
+                        <h2 class="font-bold text-center text-[16px]">Taro Kitchen Perenan</h2>
+                        <p class="text-[13.5px] text-center md:text-left">Jl. Dalem Lingsir No.9A, Pererenan, Kec. Mengwi, Kabupaten Badung, Bali 80361</p>
+                        <a href="https://g.co/kgs/dcXfnnm" class="underline text-[16px] font-bold">Open in Google Maps</a>
+                    </li>
+                    <li class="flex flex-col items-center md:items-start">
+                        <h2 class="font-bold text-center text-[16px]">Taro Kitchen Canggu</h2>
+                        <p class="text-[13.5px] text-center md:text-left">Jl. Pantai Batu Mejan, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80361</p>
+                        <a href="https://g.co/kgs/dxDzSoV" class="underline text-[16px] font-bold">Open in Google Maps</a>
+                    </li>
+                    <li class="flex flex-col items-center md:items-start">
+                        <h2 class="font-bold text-center text-[16px]">Taco Kitchen Sidewalk Jimbaran</h2>
+                        <p class="text-[13.5px] text-center md:text-left">Jl. Raya Uluwatu No.138A, Ungasan, Kec. Kuta Sel., Kabupaten Badung, Bali 80361</p>
+                        <a href="https://maps.app.goo.gl/AM8s5UaEToSzjZYD8" class="underline text-[16px] font-bold">Open in Google Maps</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-5 items-center lg:items-start">
+                <h3 class="aldivaro-stamp text-[16px] text-center text-white">
+                    Get in Touch
+                </h3>
+                <button class="w-full max-w-[239px] p-[11px] rounded-full font-semibold text-center bg-black text-brand-yellow text-base">Contact Us Via Whatsapp</button>
+                <p class="font-bold text-xs mt-14 lg:mt-auto lg:ml-auto">© 2024 Taco Kitchen</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
